@@ -7,6 +7,7 @@ import { register as getSpreadsheetInfo } from './getSpreadsheetInfo.js';
 import { register as addSpreadsheetSheet } from './addSpreadsheetSheet.js';
 import { register as createSpreadsheet } from './createSpreadsheet.js';
 import { register as listGoogleSheets } from './listGoogleSheets.js';
+import { register as duplicateSheet } from './duplicateSheet.js';
 
 // Formatting & validation
 import { register as formatCells } from './formatCells.js';
@@ -22,6 +23,7 @@ export function registerSheetsTools(server: FastMCP) {
   addSpreadsheetSheet(server);
   createSpreadsheet(server);
   listGoogleSheets(server);
+  duplicateSheet(server);
 
   // Formatting & validation
   formatCells(server);
