@@ -4,6 +4,7 @@ import { register as modifyThreadLabels } from './modifyThreadLabels.js';
 import { register as listLabels } from './listLabels.js';
 import { register as searchMessages } from './searchMessages.js';
 import { register as readMessage } from './readMessage.js';
+import { register as downloadAttachment } from './downloadAttachment.js';
 
 export function registerGmailTools(server: FastMCP) {
   archiveThreads(server);
@@ -11,4 +12,5 @@ export function registerGmailTools(server: FastMCP) {
   listLabels(server);
   searchMessages(server);
   readMessage(server);
+  downloadAttachment(server);
 }
